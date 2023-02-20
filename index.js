@@ -3,6 +3,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
+import rateLimit from 'express-rate-limit';
+
 dotenv.config();
 
 const app = express();
@@ -10,6 +12,14 @@ const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
+
+const limiter = rateLimit({
+  windowMs: 60 * 2000, // 2 minuto
+  max: 10, // máximo de 10 solicitações por janela
+  message: { error: "Você atingiu o limite máximo de solicitações por minuto. Tente novamente em dois minutos." },
+});
+
+app.use(limiter);
 
 app.get('/previsao-do-tempo', async (req, res) => {
   const { city } = req.query;
@@ -26,7 +36,7 @@ app.get('/previsao-do-tempo', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.json('Busque um cidade para previsão do tempo');
+  res.json('Busque uma cidade para previsão do tempo');
 });
 
 app.listen(port, () => {
