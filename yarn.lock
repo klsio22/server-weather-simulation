@@ -9,39 +9,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@esbuild-kit/cjs-loader@^2.4.2":
-  "integrity" "sha512-BDXFbYOJzT/NBEtp71cvsrGPwGAMGRB/349rwKuoxNSiKjPraNNnlK6MIIabViCjqZugu6j+xeMDlEkWdHHJSg=="
-  "resolved" "https://registry.npmjs.org/@esbuild-kit/cjs-loader/-/cjs-loader-2.4.2.tgz"
-  "version" "2.4.2"
-  dependencies:
-    "@esbuild-kit/core-utils" "^3.0.0"
-    "get-tsconfig" "^4.4.0"
-
-"@esbuild-kit/core-utils@^3.0.0":
-  "integrity" "sha512-Uuk8RpCg/7fdHSceR1M6XbSZFSuMrxcePFuGgyvsBn+u339dk5OeL4jv2EojwTN2st/unJGsVm4qHWjWNmJ/tw=="
-  "resolved" "https://registry.npmjs.org/@esbuild-kit/core-utils/-/core-utils-3.1.0.tgz"
-  "version" "3.1.0"
-  dependencies:
-    "esbuild" "~0.17.6"
-    "source-map-support" "^0.5.21"
-
-"@esbuild-kit/esm-loader@^2.5.5":
-  "integrity" "sha512-Qwfvj/qoPbClxCRNuac1Du01r9gvNOT+pMYtJDapfB1eoGN1YlJ1BixLyL9WVENRx5RXgNLdfYdx/CuswlGhMw=="
-  "resolved" "https://registry.npmjs.org/@esbuild-kit/esm-loader/-/esm-loader-2.5.5.tgz"
-  "version" "2.5.5"
-  dependencies:
-    "@esbuild-kit/core-utils" "^3.0.0"
-    "get-tsconfig" "^4.4.0"
-
 "@esbuild/linux-x64@0.16.17":
   "integrity" "sha512-mdPjPxfnmoqhgpiEArqi4egmBAMYvaObgn4poorpUaqmvzzbvqbowRllQ+ZgzGVMGKaPkqUmPDOOFQRUFDmeUw=="
   "resolved" "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.16.17.tgz"
   "version" "0.16.17"
-
-"@esbuild/linux-x64@0.17.9":
-  "integrity" "sha512-jVa5NKqwBmq57aNDZOSnNuRTV5GrI93HdjTlyQyRrOs7OSEQq2r9NyaGd6KmzuxLz19XTanFt4WeGoLnjFT1Ug=="
-  "resolved" "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.17.9.tgz"
-  "version" "0.17.9"
 
 "@jridgewell/resolve-uri@^3.0.3":
   "integrity" "sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w=="
@@ -538,34 +509,6 @@
     "@esbuild/win32-ia32" "0.16.17"
     "@esbuild/win32-x64" "0.16.17"
 
-"esbuild@~0.17.6":
-  "integrity" "sha512-m3b2MR76QkwKPw/KQBlBJVaIncfQhhXsDMCFPoyqEOIziV+O7BAKqOYT1NbHsnFUX0/98CLWxUfM5stzh4yq4Q=="
-  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.17.9.tgz"
-  "version" "0.17.9"
-  optionalDependencies:
-    "@esbuild/android-arm" "0.17.9"
-    "@esbuild/android-arm64" "0.17.9"
-    "@esbuild/android-x64" "0.17.9"
-    "@esbuild/darwin-arm64" "0.17.9"
-    "@esbuild/darwin-x64" "0.17.9"
-    "@esbuild/freebsd-arm64" "0.17.9"
-    "@esbuild/freebsd-x64" "0.17.9"
-    "@esbuild/linux-arm" "0.17.9"
-    "@esbuild/linux-arm64" "0.17.9"
-    "@esbuild/linux-ia32" "0.17.9"
-    "@esbuild/linux-loong64" "0.17.9"
-    "@esbuild/linux-mips64el" "0.17.9"
-    "@esbuild/linux-ppc64" "0.17.9"
-    "@esbuild/linux-riscv64" "0.17.9"
-    "@esbuild/linux-s390x" "0.17.9"
-    "@esbuild/linux-x64" "0.17.9"
-    "@esbuild/netbsd-x64" "0.17.9"
-    "@esbuild/openbsd-x64" "0.17.9"
-    "@esbuild/sunos-x64" "0.17.9"
-    "@esbuild/win32-arm64" "0.17.9"
-    "@esbuild/win32-ia32" "0.17.9"
-    "@esbuild/win32-x64" "0.17.9"
-
 "escape-html@~1.0.3":
   "integrity" "sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow=="
   "resolved" "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
@@ -680,11 +623,6 @@
     "function-bind" "^1.1.1"
     "has" "^1.0.3"
     "has-symbols" "^1.0.3"
-
-"get-tsconfig@^4.4.0":
-  "integrity" "sha512-0Gdjo/9+FzsYhXCEFueo2aY1z1tpXrxWZzP7k8ul9qt1U5o8rYJwTJYmaeHdrVosYIVYkOy2iwCJ9FdpocJhPQ=="
-  "resolved" "https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.4.0.tgz"
-  "version" "4.4.0"
 
 "glob-parent@~5.1.2":
   "integrity" "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="
@@ -1270,17 +1208,6 @@
   "integrity" "sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
   "version" "2.5.0"
-
-"tsx@^3.12.3":
-  "integrity" "sha512-Wc5BFH1xccYTXaQob+lEcimkcb/Pq+0en2s+ruiX0VEIC80nV7/0s7XRahx8NnsoCnpCVUPz8wrqVSPi760LkA=="
-  "resolved" "https://registry.npmjs.org/tsx/-/tsx-3.12.3.tgz"
-  "version" "3.12.3"
-  dependencies:
-    "@esbuild-kit/cjs-loader" "^2.4.2"
-    "@esbuild-kit/core-utils" "^3.0.0"
-    "@esbuild-kit/esm-loader" "^2.5.5"
-  optionalDependencies:
-    "fsevents" "~2.3.2"
 
 "type-detect@^4.0.0", "type-detect@^4.0.5":
   "integrity" "sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g=="
