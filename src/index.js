@@ -14,9 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 const limiter = rateLimit({
-  windowMs: 60 * 2000, // 2 minuto
+  windowMs: 60 * 3000, // 3 minutos
   max: 10, // máximo de 10 solicitações por janela
-  message: { error: "Você atingiu o limite máximo de solicitações por minuto. Tente novamente em dois minutos." },
+  message: { error: "Você atingiu o limite máximo de solicitações por minuto. Tente novamente em três minutos." },
 });
 
 app.use(limiter);
@@ -36,7 +36,7 @@ app.get('/previsao-do-tempo', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.json('Busque uma cidade para previsão do tempo');
+  res.json('-Busque uma cidade para previsão do tempo-');
 });
 
 app.listen(port, () => {
