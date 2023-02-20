@@ -1,5 +1,5 @@
 {
-  "name": "deploy-node-in-vercel",
+  "name": "server-weather-simulation",
   "version": 2,
   "public": true,
   "build": {
